@@ -1,0 +1,34 @@
+<form [formGroup]="sampleForm" name="sampleForm" id="sampleForm" novalidate>
+    <fieldset>
+
+        <div>
+            <input id="name" name="name" type="text" formControlName="name" placeholder="Name" [ngClass]="{'error-input':(!sampleForm.controls.name.valid && !sampleForm.controls.name.pristine )}">
+        </div>
+
+        <div>
+            <input id="cpf" name="cpf" type="text" formControlName="cpf" placeholder="CPF" [ngClass]="{'error-input':(!sampleForm.controls.cpf.valid && !sampleForm.controls.cpf.pristine )}">
+        </div>
+
+        <div>
+            <input id="cnpj" name="cnpj" type="text" formControlName="cnpj" placeholder="CNPJ" [ngClass]="{'error-input':(!sampleForm.controls.cnpj.valid && !sampleForm.controls.cnpj.pristine )}">
+        </div>
+
+        <div>
+            <input id="telefone" name="telefone" type="text" formControlName="telefone" placeholder="Telefone" [ngClass]="{'error-input':(!sampleForm.controls.cpf.valid && !sampleForm.controls.cpf.pristine )}">
+        </div>
+
+        <div>
+            <input id="email" name="email" type="text" formControlName="email" placeholder="Email" [ngClass]="{'error-input':(!sampleForm.controls.email.valid && !sampleForm.controls.email.pristine )}">
+        </div>
+        <div>
+            <input id="maiorIdade" type="date" name="maiorIdade" formControlName="maiorIdade" placeholder="Maior de Idade" [ngClass]="{'error-input':(!sampleForm.controls.maiorIdade.valid && !sampleForm.controls.maiorIdade.pristine )}">
+
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit" class=" btn-xs btn-warning continuar">Continuar</button>
+            <!--<button (click)="submit()" class="btn btn-warning continuar">Continuar</button>-->
+        </div>
+    </fieldset>
+</form>

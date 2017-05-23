@@ -1,0 +1,5 @@
+.error-input {
+    border: 1px dashed red;
+    color: red;
+    border-style: double;
+}
