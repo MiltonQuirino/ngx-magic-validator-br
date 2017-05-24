@@ -4,7 +4,7 @@ import { MagicValidatorDate } from './MagicValidator.date';
 
 describe('SampleComponent', () => {
 
-    fit('should return null for a date less to 18 years ago format pt-br ', () => {
+    it('should return null for a date less to 18 years ago format pt-br ', () => {
 
         const control = new FormControl();
         control.setValue('05/11/1986');
@@ -12,7 +12,7 @@ describe('SampleComponent', () => {
 
     });
 
-    fit('should return null for a date less to 18 years ago format en', () => {
+    it('should return null for a date less to 18 years ago format en', () => {
 
         const control = new FormControl();
         control.setValue('1986-11-05');
@@ -20,7 +20,7 @@ describe('SampleComponent', () => {
 
     });
 
-    fit('should return object for a date great to 18 years ago format en', () => {
+    it('should return object for a date great to 18 years ago format en', () => {
 
         const control = new FormControl();
         control.setValue('2008-11-05');
@@ -28,7 +28,7 @@ describe('SampleComponent', () => {
 
     });
 
-     fit('should return object for a date great to 18 years ago format pt-br', () => {
+     it('should return object for a date great to 18 years ago format pt-br', () => {
 
         const control = new FormControl();
         control.setValue('05/11/2005');
