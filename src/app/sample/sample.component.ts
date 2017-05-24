@@ -21,6 +21,7 @@ export class SampleComponent implements OnInit {
       ])],
       cpf: ['', Validators.compose([
         Validators.required,
+        MagicValidator.validators.cpf.ValidaCPF
       ])],
       cnpj: ['', Validators.compose([
         Validators.minLength(2),
@@ -31,7 +32,7 @@ export class SampleComponent implements OnInit {
         Validators.minLength(2),
         Validators.maxLength(30),
         Validators.required,
-        MagicValidator.EmailValidator
+        MagicValidator.validators.email.EmailValidator
       ])],
       telefone: ['', Validators.compose([
         Validators.minLength(2),
@@ -42,7 +43,7 @@ export class SampleComponent implements OnInit {
         Validators.minLength(2),
         Validators.maxLength(30),
         Validators.required,
-        MagicValidator.MaiorDeIdade
+        MagicValidator.validators.date.MaiorDeIdade
       ])],
     });
 
