@@ -26,7 +26,8 @@ export class SampleComponent implements OnInit {
       cnpj: ['', Validators.compose([
         Validators.minLength(2),
         Validators.maxLength(30),
-        Validators.required
+        Validators.required,
+        MagicValidator.validators.cnpj.ValidaCNPJ
       ])],
       email: ['', Validators.compose([
         Validators.minLength(2),

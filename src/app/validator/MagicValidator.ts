@@ -3,7 +3,7 @@ import * as moment from 'moment';
 import { MagicValidatorCPF } from './MagicValidator.cpf';
 import { MagicValidatorDate } from './MagicValidator.date';
 import { MagicValidatorEmail } from './MagicValidator.email';
-
+import { MagicValidatorCNPJ } from './MagicValidator.cnpj';
 
 export class MagicValidator {
 
@@ -11,7 +11,8 @@ export class MagicValidator {
     private static  _validators = {
         cpf: MagicValidatorCPF,
         date: MagicValidatorDate,
-        email: MagicValidatorEmail
+        email: MagicValidatorEmail,
+        cnpj: MagicValidatorCNPJ
     };
 
     public static get validators(){

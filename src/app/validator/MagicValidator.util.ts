@@ -11,8 +11,8 @@ export class MagicValidatorUtil {
     }
 
     static RemoveCaracter(data): string {
-        const re = /[-!"#$%&()*+,./:;<=>?@[\\\]_`{|}~a-zA-Z]/;
-        return data.replace(re);
+        const re = /[-!"#$%&()*+,./:;<=>?@[\\\]_`{|}~a-zA-Z]/g;
+        return data.replace(re, '');
     }
 
     private static minLenght(data, min) {
