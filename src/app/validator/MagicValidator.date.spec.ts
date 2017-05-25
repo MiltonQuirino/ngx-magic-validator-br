@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl } from '@angular/forms';
 import { MagicValidatorDate } from './MagicValidator.date';
 
-describe('SampleComponent', () => {
+describe('MagicValidatorDate', () => {
 
     it('should return null for a date less to 18 years ago format pt-br ', () => {
 

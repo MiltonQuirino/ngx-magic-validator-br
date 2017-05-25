@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl } from '@angular/forms';
 import { MagicValidatorCPF } from './MagicValidator.cpf';
 
-describe('SampleComponent', () => {
+describe('MagicValidatorCPF', () => {
 
     it('should return null for a valid CPF', () => {
 
