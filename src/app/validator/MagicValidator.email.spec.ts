@@ -31,7 +31,7 @@ describe('MagicValidatorEmail', () => {
     it('should return object for a email without domain', () => {
 
         const control = new FormControl();
-        control.setValue('miltonquirino.br');
+        control.setValue('miltonquirino.br@');
         expect(MagicValidatorEmail.EmailValidator(control)).toEqual({ valid: false });
 
     });
