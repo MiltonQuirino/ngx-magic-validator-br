@@ -4,6 +4,7 @@ import { MagicValidatorCPF } from './MagicValidator.cpf';
 import { MagicValidatorDate } from './MagicValidator.date';
 import { MagicValidatorEmail } from './MagicValidator.email';
 import { MagicValidatorCNPJ } from './MagicValidator.cnpj';
+import { MagicValidatorTelefone } from './MagicValidator.telefone';
 
 export class MagicValidator {
 
@@ -12,7 +13,8 @@ export class MagicValidator {
         cpf: MagicValidatorCPF,
         date: MagicValidatorDate,
         email: MagicValidatorEmail,
-        cnpj: MagicValidatorCNPJ
+        cnpj: MagicValidatorCNPJ,
+        telefone: MagicValidatorTelefone
     };
 
     public static get validators(){
@@ -30,17 +32,5 @@ export class MagicValidator {
         return result;
     }
 
-    // private static verificaCpfCnpj(valor) {
-    //     valor = valor.toString();
-    //     valor = valor.replace(/[^0-9]/g, '');
-
-    //     if (valor.length === 11) {
-    //         return 'CPF';
-    //     } else if (valor.length === 14) {
-    //         return 'CNPJ';
-    //     } else {
-    //         return false;
-    //     }
-    // }
 
 }

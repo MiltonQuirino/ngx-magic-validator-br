@@ -15,15 +15,15 @@ export class MagicValidatorUtil {
         return data.replace(re, '');
     }
 
-    private static minLenght(data, min) {
-        if (data.length > min) {
+    public static minLenght(data, min) {
+        if (data.length >= min) {
             return true;
         }
         return false;
     }
 
-    private static maxLength(data, max) {
-        if (data.length < max) {
+    public static maxLength(data, max) {
+        if (data.length <= max) {
             return true;
         }
         return false;

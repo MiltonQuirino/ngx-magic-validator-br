@@ -38,7 +38,8 @@ export class SampleComponent implements OnInit {
       telefone: ['', Validators.compose([
         Validators.minLength(2),
         Validators.maxLength(30),
-        Validators.required
+        Validators.required,
+        MagicValidator.validators.telefone.TelefoneValidator
       ])],
        maiorIdade: ['', Validators.compose([
         Validators.minLength(2),
