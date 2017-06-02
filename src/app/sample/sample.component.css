@@ -3,3 +3,22 @@
     color: red;
     border-style: double;
 }
+
+#sampleForm{
+    text-align: left;
+    color: white;
+}
+
+.row.body-form{
+
+    background-image: url("../../assets/images/lab-icon.svg");
+    background-position: 90% 600px; 
+   
+    min-height: 600px; 
+
+    background-size: 100px 100px;
+  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
+}

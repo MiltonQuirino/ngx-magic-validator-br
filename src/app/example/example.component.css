@@ -1,0 +1,11 @@
+.getting-started{
+    background-image: url("../../assets/images/lab-icon-gray.svg");
+    background-position: 90% 600px; 
+   
+    min-height: 600px; 
+
+    background-size: 100px 100px;
+  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
