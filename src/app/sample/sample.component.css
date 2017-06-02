@@ -11,14 +11,16 @@
 
 .row.body-form{
 
+    background: #8f8ef3;
+    
+    margin-right: 0px;
+    margin-left: 0px;
+   
+    /*Parallax*/
     background-image: url("../../assets/images/lab-icon.svg");
     background-position: 90% 600px; 
-   
     min-height: 600px; 
-
     background-size: 100px 100px;
-  
     background-attachment: fixed;
     background-repeat: no-repeat;
-   
 }
