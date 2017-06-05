@@ -22,6 +22,10 @@ general:
 # Dependencies
 dependencies:  
   pre:
+    pre:
+    - rm -rf ./node_modules
+  cache_directories:
+    - ~/.npm
     # we will login to dockerhub here please note the the docker credentials are coming from the environment
     # we will configure them in the web ui later
     # - docker login -u $DOCKER_USER -p $DOCKER_PASS -e $DOCKER_EMAIL
@@ -32,11 +36,13 @@ dependencies:
     # - openssl req -x509 -nodes -newkey rsa:2048 -keyout ~/ci-test.key -out ~/ci-test.com.crt -subj "/C=NL/ST=Test SSL/L=Rotterdam/O=Testing Test/OU=IT Department/CN=circle.ci.demo"
 
 # Test Commands
-test:  
-  override:
-    # Circle by default will run npm test command,
-    # We want to override it so we can generate coverage as-well.
-    - ng test --code-coverage --single-run
+test:
+  post:
+    # run debug build
+    - echo "npm run debug build on circle ci"
+    - npm run build:dev
+   
+
 
 # deployment:  
 #   production:
