@@ -10,7 +10,7 @@ export class MagicValidatorDate extends MagicValidatorUtil {
             return { valid: false };
         }
 
-        const birthday = moment(control.value);
+        const birthday = moment(control.value, ['MM-DD-YYYY', 'YYYY-MM-DD']);
 
         if (!birthday.isValid()) {
             return { valid: false };
