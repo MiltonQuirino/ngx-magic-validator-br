@@ -1,5 +1,6 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/0.13/config/configuration-file.html
+const webpackConfig = require('./config/webpack.dev');
 
 module.exports = function (config) {
   config.set({
@@ -21,6 +22,7 @@ module.exports = function (config) {
     preprocessors: {
       './src/test.ts': ['@angular/cli']
     },
+    webpack: webpackConfig,
     mime: {
       'text/x-typescript': ['ts','tsx']
     },
