@@ -36,7 +36,9 @@ test:
   override:
     # Circle by default will run npm test command,
     # We want to override it so we can generate coverage as-well.
-    - ng test --code-coverage --single-run
+    #- ng test --code-coverage --single-run
+
+    - ng test --watch=false
 
 # deployment:  
 #   production:
