@@ -21,7 +21,7 @@ general:
 
 # Dependencies
 dependencies:  
-  pre:
+
     pre:
     - rm -rf ./node_modules
   cache_directories:
