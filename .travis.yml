@@ -17,3 +17,4 @@ notifications:
   email:
     on_failure: change
     on_success: change
+    slack: workablesolution:jYMnxwjbo0QJiy5R8HINdiDd
